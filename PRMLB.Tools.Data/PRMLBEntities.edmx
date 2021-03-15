@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PRMLBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="players">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="player_id" Type="float" />
+          <Property Name="team_id" Type="float" />
+          <Property Name="league_id" Type="float" />
+          <Property Name="position" Type="float" />
+          <Property Name="role" Type="float" />
+          <Property Name="first_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="last_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="nick_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="age" Type="float" />
+          <Property Name="date_of_birth" Type="nvarchar" MaxLength="255" />
+          <Property Name="city_of_birth_id" Type="float" />
+          <Property Name="nation_id" Type="float" />
+          <Property Name="second_nation_id" Type="float" />
+          <Property Name="weight" Type="float" />
+          <Property Name="height" Type="float" />
+          <Property Name="retired" Type="float" />
+          <Property Name="free_agent" Type="float" />
+          <Property Name="last_league_id" Type="float" />
+          <Property Name="last_team_id" Type="float" />
+          <Property Name="organization_id" Type="float" />
+          <Property Name="last_organization_id" Type="float" />
+          <Property Name="language_ids0" Type="float" />
+          <Property Name="language_ids1" Type="float" />
+          <Property Name="uniform_number" Type="float" />
+          <Property Name="experience" Type="float" />
+          <Property Name="person_type" Type="float" />
+          <Property Name="bats" Type="float" />
+          <Property Name="throws" Type="float" />
+          <Property Name="personality_greed" Type="float" />
+          <Property Name="personality_loyalty" Type="float" />
+          <Property Name="personality_play_for_winner" Type="float" />
+          <Property Name="personality_work_ethic" Type="float" />
+          <Property Name="personality_intelligence" Type="float" />
+          <Property Name="personality_leader" Type="float" />
+          <Property Name="historical_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="historical_team_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="best_contract_offer_id" Type="float" />
+          <Property Name="injury_is_injured" Type="float" />
+          <Property Name="injury_dtd_injury" Type="float" />
+          <Property Name="injury_career_ending" Type="float" />
+          <Property Name="injury_dl_left" Type="float" />
+          <Property Name="injury_dl_playoff_round" Type="float" />
+          <Property Name="injury_left" Type="float" />
+          <Property Name="dtd_injury_effect" Type="float" />
+          <Property Name="injury_id" Type="float" />
+          <Property Name="prone_overall" Type="float" />
+          <Property Name="prone_leg" Type="float" />
+          <Property Name="prone_back" Type="float" />
+          <Property Name="prone_arm" Type="float" />
+          <Property Name="fatigue_pitches0" Type="float" />
+          <Property Name="fatigue_pitches1" Type="float" />
+          <Property Name="fatigue_pitches2" Type="float" />
+          <Property Name="fatigue_pitches3" Type="float" />
+          <Property Name="fatigue_pitches4" Type="float" />
+          <Property Name="fatigue_pitches5" Type="float" />
+          <Property Name="fatigue_points" Type="float" />
+          <Property Name="fatigue_played_today" Type="float" />
+          <Property Name="running_ratings_speed" Type="float" />
+          <Property Name="running_ratings_stealing" Type="float" />
+          <Property Name="running_ratings_baserunning" Type="float" />
+          <Property Name="college" Type="float" />
+          <Property Name="draft_year" Type="float" />
+          <Property Name="draft_round" Type="float" />
+          <Property Name="draft_supplemental" Type="float" />
+          <Property Name="draft_pick" Type="float" />
+          <Property Name="draft_overall_pick" Type="float" />
+          <Property Name="draft_eligible" Type="float" />
+          <Property Name="hsc_status" Type="float" />
+          <Property Name="picked_in_draft" Type="float" />
+          <Property Name="school" Type="float" />
+          <Property Name="commit_school" Type="float" />
+          <Property Name="hidden" Type="float" />
+          <Property Name="draft_league_id" Type="float" />
+          <Property Name="draft_team_id" Type="float" />
+          <Property Name="turned_coach" Type="float" />
+          <Property Name="hall_of_fame" Type="float" />
+          <Property Name="rust" Type="float" />
+          <Property Name="inducted" Type="float" />
+          <Property Name="strategy_override_team" Type="float" />
+          <Property Name="strategy_stealing" Type="float" />
+          <Property Name="strategy_running" Type="float" />
+          <Property Name="strategy_bunt_for_hit" Type="float" />
+          <Property Name="strategy_sac_bunt" Type="float" />
+          <Property Name="strategy_hit_run" Type="float" />
+          <Property Name="strategy_hook_start" Type="float" />
+          <Property Name="strategy_hook_relief" Type="float" />
+          <Property Name="strategy_pitch_count" Type="float" />
+          <Property Name="strategy_pitch_around" Type="float" />
+          <Property Name="strategy_no_pinch_if_rested" Type="float" />
+          <Property Name="strategy_never_pinch_hit" Type="float" />
+          <Property Name="strategy_defensive_sub" Type="nvarchar" MaxLength="255" />
+          <Property Name="strategy_dtd_sit_min" Type="float" />
+          <Property Name="strategy_dtd_allow_ph" Type="float" />
+          <Property Name="local_pop" Type="float" />
+          <Property Name="national_pop" Type="float" />
+          <Property Name="draft_protected" Type="float" />
+          <Property Name="morale" Type="float" />
+          <Property Name="morale_player_performance" Type="float" />
+          <Property Name="morale_team_performance" Type="float" />
+          <Property Name="morale_team_transactions" Type="float" />
+          <Property Name="expectation" Type="float" />
+          <Property Name="morale_player_role" Type="float" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="teams">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="team_id" Type="float" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="abbr" Type="nvarchar" MaxLength="255" />
+          <Property Name="nickname" Type="nvarchar" MaxLength="255" />
+          <Property Name="logo_file_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="city_id" Type="float" />
+          <Property Name="park_id" Type="float" />
+          <Property Name="league_id" Type="float" />
+          <Property Name="sub_league_id" Type="float" />
+          <Property Name="division_id" Type="float" />
+          <Property Name="nation_id" Type="float" />
+          <Property Name="parent_team_id" Type="float" />
+          <Property Name="level" Type="float" />
+          <Property Name="prevent_any_moves" Type="float" />
+          <Property Name="human_team" Type="float" />
+          <Property Name="human_id" Type="float" />
+          <Property Name="gender" Type="float" />
+          <Property Name="background_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="text_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="ballcaps_main_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="ballcaps_visor_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="jersey_main_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="jersey_away_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="jersey_secondary_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="jersey_pin_stripes_color_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="allstar_team" Type="float" />
+          <Property Name="historical_id" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="trade_history">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="date" Type="datetime" />
+          <Property Name="summary" Type="nvarchar" MaxLength="255" />
+          <Property Name="message_id" Type="float" />
+          <Property Name="team_id_0" Type="float" />
+          <Property Name="player_id_0_0" Type="float" />
+          <Property Name="draft_round_0_0" Type="float" />
+          <Property Name="draft_team_0_0" Type="float" />
+          <Property Name="player_id_0_1" Type="float" />
+          <Property Name="draft_round_0_1" Type="float" />
+          <Property Name="draft_team_0_1" Type="float" />
+          <Property Name="player_id_0_2" Type="float" />
+          <Property Name="draft_round_0_2" Type="float" />
+          <Property Name="draft_team_0_2" Type="float" />
+          <Property Name="player_id_0_3" Type="float" />
+          <Property Name="draft_round_0_3" Type="float" />
+          <Property Name="draft_team_0_3" Type="float" />
+          <Property Name="player_id_0_4" Type="float" />
+          <Property Name="draft_round_0_4" Type="float" />
+          <Property Name="draft_team_0_4" Type="float" />
+          <Property Name="cash_0" Type="float" />
+          <Property Name="team_id_1" Type="float" />
+          <Property Name="player_id_1_0" Type="float" />
+          <Property Name="draft_round_1_0" Type="float" />
+          <Property Name="draft_team_1_0" Type="float" />
+          <Property Name="player_id_1_1" Type="float" />
+          <Property Name="draft_round_1_1" Type="float" />
+          <Property Name="draft_team_1_1" Type="float" />
+          <Property Name="player_id_1_2" Type="float" />
+          <Property Name="draft_round_1_2" Type="float" />
+          <Property Name="draft_team_1_2" Type="float" />
+          <Property Name="player_id_1_3" Type="float" />
+          <Property Name="draft_round_1_3" Type="float" />
+          <Property Name="draft_team_1_3" Type="float" />
+          <Property Name="player_id_1_4" Type="float" />
+          <Property Name="draft_round_1_4" Type="float" />
+          <Property Name="draft_team_1_4" Type="float" />
+          <Property Name="cash_1" Type="float" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="PRMLBModelStoreContainer">
+          <EntitySet Name="players" EntityType="Self.players" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="teams" EntityType="Self.teams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="trade_history" EntityType="Self.trade_history" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PRMLBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="player">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="player_id" Type="Double" />
+          <Property Name="team_id" Type="Double" />
+          <Property Name="league_id" Type="Double" />
+          <Property Name="position" Type="Double" />
+          <Property Name="role" Type="Double" />
+          <Property Name="first_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="last_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="nick_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="age" Type="Double" />
+          <Property Name="date_of_birth" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="city_of_birth_id" Type="Double" />
+          <Property Name="nation_id" Type="Double" />
+          <Property Name="second_nation_id" Type="Double" />
+          <Property Name="weight" Type="Double" />
+          <Property Name="height" Type="Double" />
+          <Property Name="retired" Type="Double" />
+          <Property Name="free_agent" Type="Double" />
+          <Property Name="last_league_id" Type="Double" />
+          <Property Name="last_team_id" Type="Double" />
+          <Property Name="organization_id" Type="Double" />
+          <Property Name="last_organization_id" Type="Double" />
+          <Property Name="language_ids0" Type="Double" />
+          <Property Name="language_ids1" Type="Double" />
+          <Property Name="uniform_number" Type="Double" />
+          <Property Name="experience" Type="Double" />
+          <Property Name="person_type" Type="Double" />
+          <Property Name="bats" Type="Double" />
+          <Property Name="throws" Type="Double" />
+          <Property Name="personality_greed" Type="Double" />
+          <Property Name="personality_loyalty" Type="Double" />
+          <Property Name="personality_play_for_winner" Type="Double" />
+          <Property Name="personality_work_ethic" Type="Double" />
+          <Property Name="personality_intelligence" Type="Double" />
+          <Property Name="personality_leader" Type="Double" />
+          <Property Name="historical_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="historical_team_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="best_contract_offer_id" Type="Double" />
+          <Property Name="injury_is_injured" Type="Double" />
+          <Property Name="injury_dtd_injury" Type="Double" />
+          <Property Name="injury_career_ending" Type="Double" />
+          <Property Name="injury_dl_left" Type="Double" />
+          <Property Name="injury_dl_playoff_round" Type="Double" />
+          <Property Name="injury_left" Type="Double" />
+          <Property Name="dtd_injury_effect" Type="Double" />
+          <Property Name="injury_id" Type="Double" />
+          <Property Name="prone_overall" Type="Double" />
+          <Property Name="prone_leg" Type="Double" />
+          <Property Name="prone_back" Type="Double" />
+          <Property Name="prone_arm" Type="Double" />
+          <Property Name="fatigue_pitches0" Type="Double" />
+          <Property Name="fatigue_pitches1" Type="Double" />
+          <Property Name="fatigue_pitches2" Type="Double" />
+          <Property Name="fatigue_pitches3" Type="Double" />
+          <Property Name="fatigue_pitches4" Type="Double" />
+          <Property Name="fatigue_pitches5" Type="Double" />
+          <Property Name="fatigue_points" Type="Double" />
+          <Property Name="fatigue_played_today" Type="Double" />
+          <Property Name="running_ratings_speed" Type="Double" />
+          <Property Name="running_ratings_stealing" Type="Double" />
+          <Property Name="running_ratings_baserunning" Type="Double" />
+          <Property Name="college" Type="Double" />
+          <Property Name="draft_year" Type="Double" />
+          <Property Name="draft_round" Type="Double" />
+          <Property Name="draft_supplemental" Type="Double" />
+          <Property Name="draft_pick" Type="Double" />
+          <Property Name="draft_overall_pick" Type="Double" />
+          <Property Name="draft_eligible" Type="Double" />
+          <Property Name="hsc_status" Type="Double" />
+          <Property Name="picked_in_draft" Type="Double" />
+          <Property Name="school" Type="Double" />
+          <Property Name="commit_school" Type="Double" />
+          <Property Name="hidden" Type="Double" />
+          <Property Name="draft_league_id" Type="Double" />
+          <Property Name="draft_team_id" Type="Double" />
+          <Property Name="turned_coach" Type="Double" />
+          <Property Name="hall_of_fame" Type="Double" />
+          <Property Name="rust" Type="Double" />
+          <Property Name="inducted" Type="Double" />
+          <Property Name="strategy_override_team" Type="Double" />
+          <Property Name="strategy_stealing" Type="Double" />
+          <Property Name="strategy_running" Type="Double" />
+          <Property Name="strategy_bunt_for_hit" Type="Double" />
+          <Property Name="strategy_sac_bunt" Type="Double" />
+          <Property Name="strategy_hit_run" Type="Double" />
+          <Property Name="strategy_hook_start" Type="Double" />
+          <Property Name="strategy_hook_relief" Type="Double" />
+          <Property Name="strategy_pitch_count" Type="Double" />
+          <Property Name="strategy_pitch_around" Type="Double" />
+          <Property Name="strategy_no_pinch_if_rested" Type="Double" />
+          <Property Name="strategy_never_pinch_hit" Type="Double" />
+          <Property Name="strategy_defensive_sub" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="strategy_dtd_sit_min" Type="Double" />
+          <Property Name="strategy_dtd_allow_ph" Type="Double" />
+          <Property Name="local_pop" Type="Double" />
+          <Property Name="national_pop" Type="Double" />
+          <Property Name="draft_protected" Type="Double" />
+          <Property Name="morale" Type="Double" />
+          <Property Name="morale_player_performance" Type="Double" />
+          <Property Name="morale_team_performance" Type="Double" />
+          <Property Name="morale_team_transactions" Type="Double" />
+          <Property Name="expectation" Type="Double" />
+          <Property Name="morale_player_role" Type="Double" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="team">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="team_id" Type="Double" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="abbr" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="nickname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="logo_file_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="city_id" Type="Double" />
+          <Property Name="park_id" Type="Double" />
+          <Property Name="league_id" Type="Double" />
+          <Property Name="sub_league_id" Type="Double" />
+          <Property Name="division_id" Type="Double" />
+          <Property Name="nation_id" Type="Double" />
+          <Property Name="parent_team_id" Type="Double" />
+          <Property Name="level" Type="Double" />
+          <Property Name="prevent_any_moves" Type="Double" />
+          <Property Name="human_team" Type="Double" />
+          <Property Name="human_id" Type="Double" />
+          <Property Name="gender" Type="Double" />
+          <Property Name="background_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="text_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ballcaps_main_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ballcaps_visor_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="jersey_main_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="jersey_away_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="jersey_secondary_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="jersey_pin_stripes_color_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="allstar_team" Type="Double" />
+          <Property Name="historical_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="trade_history">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="date" Type="DateTime" Precision="3" />
+          <Property Name="summary" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="message_id" Type="Double" />
+          <Property Name="team_id_0" Type="Double" />
+          <Property Name="player_id_0_0" Type="Double" />
+          <Property Name="draft_round_0_0" Type="Double" />
+          <Property Name="draft_team_0_0" Type="Double" />
+          <Property Name="player_id_0_1" Type="Double" />
+          <Property Name="draft_round_0_1" Type="Double" />
+          <Property Name="draft_team_0_1" Type="Double" />
+          <Property Name="player_id_0_2" Type="Double" />
+          <Property Name="draft_round_0_2" Type="Double" />
+          <Property Name="draft_team_0_2" Type="Double" />
+          <Property Name="player_id_0_3" Type="Double" />
+          <Property Name="draft_round_0_3" Type="Double" />
+          <Property Name="draft_team_0_3" Type="Double" />
+          <Property Name="player_id_0_4" Type="Double" />
+          <Property Name="draft_round_0_4" Type="Double" />
+          <Property Name="draft_team_0_4" Type="Double" />
+          <Property Name="cash_0" Type="Double" />
+          <Property Name="team_id_1" Type="Double" />
+          <Property Name="player_id_1_0" Type="Double" />
+          <Property Name="draft_round_1_0" Type="Double" />
+          <Property Name="draft_team_1_0" Type="Double" />
+          <Property Name="player_id_1_1" Type="Double" />
+          <Property Name="draft_round_1_1" Type="Double" />
+          <Property Name="draft_team_1_1" Type="Double" />
+          <Property Name="player_id_1_2" Type="Double" />
+          <Property Name="draft_round_1_2" Type="Double" />
+          <Property Name="draft_team_1_2" Type="Double" />
+          <Property Name="player_id_1_3" Type="Double" />
+          <Property Name="draft_round_1_3" Type="Double" />
+          <Property Name="draft_team_1_3" Type="Double" />
+          <Property Name="player_id_1_4" Type="Double" />
+          <Property Name="draft_round_1_4" Type="Double" />
+          <Property Name="draft_team_1_4" Type="Double" />
+          <Property Name="cash_1" Type="Double" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="PRMLBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="players" EntityType="Self.player" />
+          <EntitySet Name="teams" EntityType="Self.team" />
+          <EntitySet Name="trade_history" EntityType="Self.trade_history" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PRMLBModelStoreContainer" CdmEntityContainer="PRMLBEntities">
+          <EntitySetMapping Name="players">
+            <EntityTypeMapping TypeName="PRMLBModel.player">
+              <MappingFragment StoreEntitySet="players">
+                <ScalarProperty Name="player_id" ColumnName="player_id" />
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+                <ScalarProperty Name="league_id" ColumnName="league_id" />
+                <ScalarProperty Name="position" ColumnName="position" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="nick_name" ColumnName="nick_name" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+                <ScalarProperty Name="city_of_birth_id" ColumnName="city_of_birth_id" />
+                <ScalarProperty Name="nation_id" ColumnName="nation_id" />
+                <ScalarProperty Name="second_nation_id" ColumnName="second_nation_id" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="retired" ColumnName="retired" />
+                <ScalarProperty Name="free_agent" ColumnName="free_agent" />
+                <ScalarProperty Name="last_league_id" ColumnName="last_league_id" />
+                <ScalarProperty Name="last_team_id" ColumnName="last_team_id" />
+                <ScalarProperty Name="organization_id" ColumnName="organization_id" />
+                <ScalarProperty Name="last_organization_id" ColumnName="last_organization_id" />
+                <ScalarProperty Name="language_ids0" ColumnName="language_ids0" />
+                <ScalarProperty Name="language_ids1" ColumnName="language_ids1" />
+                <ScalarProperty Name="uniform_number" ColumnName="uniform_number" />
+                <ScalarProperty Name="experience" ColumnName="experience" />
+                <ScalarProperty Name="person_type" ColumnName="person_type" />
+                <ScalarProperty Name="bats" ColumnName="bats" />
+                <ScalarProperty Name="throws" ColumnName="throws" />
+                <ScalarProperty Name="personality_greed" ColumnName="personality_greed" />
+                <ScalarProperty Name="personality_loyalty" ColumnName="personality_loyalty" />
+                <ScalarProperty Name="personality_play_for_winner" ColumnName="personality_play_for_winner" />
+                <ScalarProperty Name="personality_work_ethic" ColumnName="personality_work_ethic" />
+                <ScalarProperty Name="personality_intelligence" ColumnName="personality_intelligence" />
+                <ScalarProperty Name="personality_leader" ColumnName="personality_leader" />
+                <ScalarProperty Name="historical_id" ColumnName="historical_id" />
+                <ScalarProperty Name="historical_team_id" ColumnName="historical_team_id" />
+                <ScalarProperty Name="best_contract_offer_id" ColumnName="best_contract_offer_id" />
+                <ScalarProperty Name="injury_is_injured" ColumnName="injury_is_injured" />
+                <ScalarProperty Name="injury_dtd_injury" ColumnName="injury_dtd_injury" />
+                <ScalarProperty Name="injury_career_ending" ColumnName="injury_career_ending" />
+                <ScalarProperty Name="injury_dl_left" ColumnName="injury_dl_left" />
+                <ScalarProperty Name="injury_dl_playoff_round" ColumnName="injury_dl_playoff_round" />
+                <ScalarProperty Name="injury_left" ColumnName="injury_left" />
+                <ScalarProperty Name="dtd_injury_effect" ColumnName="dtd_injury_effect" />
+                <ScalarProperty Name="injury_id" ColumnName="injury_id" />
+                <ScalarProperty Name="prone_overall" ColumnName="prone_overall" />
+                <ScalarProperty Name="prone_leg" ColumnName="prone_leg" />
+                <ScalarProperty Name="prone_back" ColumnName="prone_back" />
+                <ScalarProperty Name="prone_arm" ColumnName="prone_arm" />
+                <ScalarProperty Name="fatigue_pitches0" ColumnName="fatigue_pitches0" />
+                <ScalarProperty Name="fatigue_pitches1" ColumnName="fatigue_pitches1" />
+                <ScalarProperty Name="fatigue_pitches2" ColumnName="fatigue_pitches2" />
+                <ScalarProperty Name="fatigue_pitches3" ColumnName="fatigue_pitches3" />
+                <ScalarProperty Name="fatigue_pitches4" ColumnName="fatigue_pitches4" />
+                <ScalarProperty Name="fatigue_pitches5" ColumnName="fatigue_pitches5" />
+                <ScalarProperty Name="fatigue_points" ColumnName="fatigue_points" />
+                <ScalarProperty Name="fatigue_played_today" ColumnName="fatigue_played_today" />
+                <ScalarProperty Name="running_ratings_speed" ColumnName="running_ratings_speed" />
+                <ScalarProperty Name="running_ratings_stealing" ColumnName="running_ratings_stealing" />
+                <ScalarProperty Name="running_ratings_baserunning" ColumnName="running_ratings_baserunning" />
+                <ScalarProperty Name="college" ColumnName="college" />
+                <ScalarProperty Name="draft_year" ColumnName="draft_year" />
+                <ScalarProperty Name="draft_round" ColumnName="draft_round" />
+                <ScalarProperty Name="draft_supplemental" ColumnName="draft_supplemental" />
+                <ScalarProperty Name="draft_pick" ColumnName="draft_pick" />
+                <ScalarProperty Name="draft_overall_pick" ColumnName="draft_overall_pick" />
+                <ScalarProperty Name="draft_eligible" ColumnName="draft_eligible" />
+                <ScalarProperty Name="hsc_status" ColumnName="hsc_status" />
+                <ScalarProperty Name="picked_in_draft" ColumnName="picked_in_draft" />
+                <ScalarProperty Name="school" ColumnName="school" />
+                <ScalarProperty Name="commit_school" ColumnName="commit_school" />
+                <ScalarProperty Name="hidden" ColumnName="hidden" />
+                <ScalarProperty Name="draft_league_id" ColumnName="draft_league_id" />
+                <ScalarProperty Name="draft_team_id" ColumnName="draft_team_id" />
+                <ScalarProperty Name="turned_coach" ColumnName="turned_coach" />
+                <ScalarProperty Name="hall_of_fame" ColumnName="hall_of_fame" />
+                <ScalarProperty Name="rust" ColumnName="rust" />
+                <ScalarProperty Name="inducted" ColumnName="inducted" />
+                <ScalarProperty Name="strategy_override_team" ColumnName="strategy_override_team" />
+                <ScalarProperty Name="strategy_stealing" ColumnName="strategy_stealing" />
+                <ScalarProperty Name="strategy_running" ColumnName="strategy_running" />
+                <ScalarProperty Name="strategy_bunt_for_hit" ColumnName="strategy_bunt_for_hit" />
+                <ScalarProperty Name="strategy_sac_bunt" ColumnName="strategy_sac_bunt" />
+                <ScalarProperty Name="strategy_hit_run" ColumnName="strategy_hit_run" />
+                <ScalarProperty Name="strategy_hook_start" ColumnName="strategy_hook_start" />
+                <ScalarProperty Name="strategy_hook_relief" ColumnName="strategy_hook_relief" />
+                <ScalarProperty Name="strategy_pitch_count" ColumnName="strategy_pitch_count" />
+                <ScalarProperty Name="strategy_pitch_around" ColumnName="strategy_pitch_around" />
+                <ScalarProperty Name="strategy_no_pinch_if_rested" ColumnName="strategy_no_pinch_if_rested" />
+                <ScalarProperty Name="strategy_never_pinch_hit" ColumnName="strategy_never_pinch_hit" />
+                <ScalarProperty Name="strategy_defensive_sub" ColumnName="strategy_defensive_sub" />
+                <ScalarProperty Name="strategy_dtd_sit_min" ColumnName="strategy_dtd_sit_min" />
+                <ScalarProperty Name="strategy_dtd_allow_ph" ColumnName="strategy_dtd_allow_ph" />
+                <ScalarProperty Name="local_pop" ColumnName="local_pop" />
+                <ScalarProperty Name="national_pop" ColumnName="national_pop" />
+                <ScalarProperty Name="draft_protected" ColumnName="draft_protected" />
+                <ScalarProperty Name="morale" ColumnName="morale" />
+                <ScalarProperty Name="morale_player_performance" ColumnName="morale_player_performance" />
+                <ScalarProperty Name="morale_team_performance" ColumnName="morale_team_performance" />
+                <ScalarProperty Name="morale_team_transactions" ColumnName="morale_team_transactions" />
+                <ScalarProperty Name="expectation" ColumnName="expectation" />
+                <ScalarProperty Name="morale_player_role" ColumnName="morale_player_role" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="teams">
+            <EntityTypeMapping TypeName="PRMLBModel.team">
+              <MappingFragment StoreEntitySet="teams">
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="abbr" ColumnName="abbr" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="logo_file_name" ColumnName="logo_file_name" />
+                <ScalarProperty Name="city_id" ColumnName="city_id" />
+                <ScalarProperty Name="park_id" ColumnName="park_id" />
+                <ScalarProperty Name="league_id" ColumnName="league_id" />
+                <ScalarProperty Name="sub_league_id" ColumnName="sub_league_id" />
+                <ScalarProperty Name="division_id" ColumnName="division_id" />
+                <ScalarProperty Name="nation_id" ColumnName="nation_id" />
+                <ScalarProperty Name="parent_team_id" ColumnName="parent_team_id" />
+                <ScalarProperty Name="level" ColumnName="level" />
+                <ScalarProperty Name="prevent_any_moves" ColumnName="prevent_any_moves" />
+                <ScalarProperty Name="human_team" ColumnName="human_team" />
+                <ScalarProperty Name="human_id" ColumnName="human_id" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="background_color_id" ColumnName="background_color_id" />
+                <ScalarProperty Name="text_color_id" ColumnName="text_color_id" />
+                <ScalarProperty Name="ballcaps_main_color_id" ColumnName="ballcaps_main_color_id" />
+                <ScalarProperty Name="ballcaps_visor_color_id" ColumnName="ballcaps_visor_color_id" />
+                <ScalarProperty Name="jersey_main_color_id" ColumnName="jersey_main_color_id" />
+                <ScalarProperty Name="jersey_away_color_id" ColumnName="jersey_away_color_id" />
+                <ScalarProperty Name="jersey_secondary_color_id" ColumnName="jersey_secondary_color_id" />
+                <ScalarProperty Name="jersey_pin_stripes_color_id" ColumnName="jersey_pin_stripes_color_id" />
+                <ScalarProperty Name="allstar_team" ColumnName="allstar_team" />
+                <ScalarProperty Name="historical_id" ColumnName="historical_id" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trade_history">
+            <EntityTypeMapping TypeName="PRMLBModel.trade_history">
+              <MappingFragment StoreEntitySet="trade_history">
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="summary" ColumnName="summary" />
+                <ScalarProperty Name="message_id" ColumnName="message_id" />
+                <ScalarProperty Name="team_id_0" ColumnName="team_id_0" />
+                <ScalarProperty Name="player_id_0_0" ColumnName="player_id_0_0" />
+                <ScalarProperty Name="draft_round_0_0" ColumnName="draft_round_0_0" />
+                <ScalarProperty Name="draft_team_0_0" ColumnName="draft_team_0_0" />
+                <ScalarProperty Name="player_id_0_1" ColumnName="player_id_0_1" />
+                <ScalarProperty Name="draft_round_0_1" ColumnName="draft_round_0_1" />
+                <ScalarProperty Name="draft_team_0_1" ColumnName="draft_team_0_1" />
+                <ScalarProperty Name="player_id_0_2" ColumnName="player_id_0_2" />
+                <ScalarProperty Name="draft_round_0_2" ColumnName="draft_round_0_2" />
+                <ScalarProperty Name="draft_team_0_2" ColumnName="draft_team_0_2" />
+                <ScalarProperty Name="player_id_0_3" ColumnName="player_id_0_3" />
+                <ScalarProperty Name="draft_round_0_3" ColumnName="draft_round_0_3" />
+                <ScalarProperty Name="draft_team_0_3" ColumnName="draft_team_0_3" />
+                <ScalarProperty Name="player_id_0_4" ColumnName="player_id_0_4" />
+                <ScalarProperty Name="draft_round_0_4" ColumnName="draft_round_0_4" />
+                <ScalarProperty Name="draft_team_0_4" ColumnName="draft_team_0_4" />
+                <ScalarProperty Name="cash_0" ColumnName="cash_0" />
+                <ScalarProperty Name="team_id_1" ColumnName="team_id_1" />
+                <ScalarProperty Name="player_id_1_0" ColumnName="player_id_1_0" />
+                <ScalarProperty Name="draft_round_1_0" ColumnName="draft_round_1_0" />
+                <ScalarProperty Name="draft_team_1_0" ColumnName="draft_team_1_0" />
+                <ScalarProperty Name="player_id_1_1" ColumnName="player_id_1_1" />
+                <ScalarProperty Name="draft_round_1_1" ColumnName="draft_round_1_1" />
+                <ScalarProperty Name="draft_team_1_1" ColumnName="draft_team_1_1" />
+                <ScalarProperty Name="player_id_1_2" ColumnName="player_id_1_2" />
+                <ScalarProperty Name="draft_round_1_2" ColumnName="draft_round_1_2" />
+                <ScalarProperty Name="draft_team_1_2" ColumnName="draft_team_1_2" />
+                <ScalarProperty Name="player_id_1_3" ColumnName="player_id_1_3" />
+                <ScalarProperty Name="draft_round_1_3" ColumnName="draft_round_1_3" />
+                <ScalarProperty Name="draft_team_1_3" ColumnName="draft_team_1_3" />
+                <ScalarProperty Name="player_id_1_4" ColumnName="player_id_1_4" />
+                <ScalarProperty Name="draft_round_1_4" ColumnName="draft_round_1_4" />
+                <ScalarProperty Name="draft_team_1_4" ColumnName="draft_team_1_4" />
+                <ScalarProperty Name="cash_1" ColumnName="cash_1" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

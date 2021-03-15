@@ -1,0 +1,68 @@
+﻿@using PRMLB.Tools.ViewModel
+@model TradeCentralViewModel
+@{
+
+    ViewBag.Title = "Trade Central";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="team1">Team 1</label>
+            <select id="team1">
+                <option value="0" selected>~Select Team 1~</option>
+                @foreach (var t in Model.Teams)
+                {
+                    <option value="@t.team_id">@t.name @t.nickname</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="team2">Team 2</label>
+            <select id="team2">
+                <option value="0" selected>~Select Team 2~</option>
+                @foreach (var t in Model.Teams)
+                {
+                    <option value="@t.team_id">@t.name @t.nickname</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <button id="newTrade">New Trade</button>
+        </div>
+        <div class="col-md-6">
+            <button id="tradeHistory">Trade History</button>
+        </div>
+    </div>
+    <div id="partialPanel"></div>
+</div>
+<script type="text/javascript">
+    $(document).ready(() => {
+        var newTradeUrl = '@Url.Action("NewTrade","Home")';
+        $("#newTrade").click(() => {
+            var team1 = $("#team1").val();
+            var team2 = $("#team2").val();
+            if (team1 * team2 == 0) {
+                alert("please select 2 teams");
+            }
+            else {
+                $("#partialPanel").load(newTradeUrl, { team1: team1, team2: team2 });
+            }
+        });
+        var tradeHistoryUrl = '@Url.Action("TradeHistory","Home")';
+        $("#tradeHistory").click(() => {
+            var team1 = $("#team1").val();
+            var team2 = $("#team2").val();
+            if (team1 * team2 == 0) {
+                alert("please select 2 teams");
+            }
+            else {
+                $("#partialPanel").load(tradeHistoryUrl, { team1: team1, team2: team2 });
+            }
+        });
+    });
+</script>

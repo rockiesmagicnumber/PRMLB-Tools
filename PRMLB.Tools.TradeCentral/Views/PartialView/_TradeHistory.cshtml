@@ -1,0 +1,59 @@
+﻿@using PRMLB.Tools.ViewModel
+@model TradeHistoryViewModel
+
+<div>
+    @foreach (var trade in Model.Trades)
+    {
+        <div class="row">
+            @trade.TradeDate.ToShortDateString()
+        </div>
+        <div class="row" style="border:2px solid black;">
+            <div class="col-md-6">
+                <div class="row">
+                    <strong>@trade.Team1Name</strong>
+                </div>
+                @foreach (var player in trade.Team1Players)
+                {
+                    <div class="row">
+                        <div class="col-md-4">@player.Position</div>
+                        <div class="col-md-8">@player.FullName</div>
+                    </div>
+                }
+                @foreach (var pick in trade.Team1Picks)
+                {
+                    <div class="row">
+                        <div class="col-md-4">@pick.RoundName round pick</div>
+                        <div class="col-md-8"></div>
+                    </div>
+                }
+                @if (trade.Team1Cash > 0)
+                {
+                    @trade.Team1Cash.ToString("C")
+                }
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <strong>@trade.Team2Name</strong>
+                </div>
+                @foreach (var player in trade.Team2Players)
+                {
+                    <div class="row">
+                        <div class="col-md-4">@player.Position</div>
+                        <div class="col-md-8">@player.FullName</div>
+                    </div>
+                }
+                @foreach (var pick in trade.Team2Picks)
+                {
+                    <div class="row">
+                        <div class="col-md-4">@pick.RoundName round pick</div>
+                        <div class="col-md-8"></div>
+                    </div>
+                }
+                @if (trade.Team2Cash > 0)
+                {
+                    @trade.Team2Cash.ToString("C")
+                }
+            </div>
+        </div>
+    }
+</div>
